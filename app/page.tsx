@@ -13,11 +13,11 @@ export default function Page() {
       <Navbar />
       <main>
         <HeroSection />
+        <ContactForm />
         <SocialProof />
         <ServicesSection />
         <HowItWorks />
         <ExclusiveSection />
-        <ContactForm />
       </main>
       <Footer />
     </>
