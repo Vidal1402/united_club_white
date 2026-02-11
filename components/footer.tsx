@@ -1,12 +1,10 @@
-import Image from "next/image"
-
 export function Footer() {
   return (
     <footer className="border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <div className="flex items-center gap-3">
-            <Image
+            <img
               src="/images/logo.png"
               alt="United Food logo"
               width={32}

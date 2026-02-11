@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 export function Navbar() {
@@ -11,7 +10,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-3">
-          <Image
+          <img
             src="/images/logo.png"
             alt="United Food logo"
             width={40}

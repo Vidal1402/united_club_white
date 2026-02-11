@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import {
   Carousel,
   CarouselContent,
@@ -121,12 +120,11 @@ export function ServicesSection() {
                 >
                   <div className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/30 h-full flex flex-col">
                     <div className="relative aspect-[16/10] w-full overflow-hidden flex-shrink-0">
-                      <Image
+                      <img
                         src={service.image || "/placeholder.svg"}
                         alt={service.alt}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 768px) 85vw, (max-width: 1024px) 70vw, 380px"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
                       />
                     </div>
                     <div className="flex flex-1 flex-col p-6">
