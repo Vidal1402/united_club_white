@@ -5,19 +5,12 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel"
-import img1 from "@/public/images/1.png"
-import img2 from "@/public/images/2.png"
-import img3 from "@/public/images/3.png"
-import img4 from "@/public/images/4.png"
-import img5 from "@/public/images/5.png"
-import img6 from "@/public/images/6.png"
-import img7 from "@/public/images/7.png"
 
 const services = [
   {
     title: "Mídia Paga",
     titleAccent: "PAGA",
-    image: img1,
+    image: "/images/1.png",
     alt: "Dashboard de mídia paga com Instagram, Facebook e iFood",
     items: [
       "Gestão de campanhas no Instagram, Facebook e iFood",
@@ -28,7 +21,7 @@ const services = [
   {
     title: "Soluções Comerciais",
     titleAccent: "COMERCIAIS",
-    image: img2,
+    image: "/images/2.png",
     alt: "Soluções de marketing digital para restaurantes",
     items: [
       "Roteiros, métodos e processos para aumentar pedidos e reservas",
@@ -38,7 +31,7 @@ const services = [
   {
     title: "Criativos & Vídeos",
     titleAccent: "VÍDEOS",
-    image: img3,
+    image: "/images/3.png",
     alt: "Criativos de vídeo para restaurantes mostrando um hambúrguer gourmet",
     items: [
       "Vídeos pensados para gerar pedidos",
@@ -49,7 +42,7 @@ const services = [
   {
     title: "Relatórios e Acompanhamento",
     titleAccent: "ACOMPANHAMENTO",
-    image: img4,
+    image: "/images/4.png",
     alt: "Dashboard de relatórios e acompanhamento de indicadores",
     items: [
       "Análise semanal de indicadores do seu restaurante",
@@ -60,7 +53,7 @@ const services = [
   {
     title: "Cardápio Digital",
     titleAccent: "DIGITAL",
-    image: img5,
+    image: "/images/5.png",
     alt: "Cardápio digital estratégico em dispositivos móveis",
     items: [
       "Organização completa do menu digital",
@@ -71,7 +64,7 @@ const services = [
   {
     title: "Disparo de Mensagens",
     titleAccent: "MENSAGENS",
-    image: img6,
+    image: "/images/6.png",
     alt: "Disparo de mensagens inteligentes via WhatsApp",
     items: [
       "Promoções automáticas via WhatsApp",
@@ -82,7 +75,7 @@ const services = [
   {
     title: "Gestão e Atendimento",
     titleAccent: "ATENDIMENTO",
-    image: img7,
+    image: "/images/7.png",
     alt: "Gestão e atendimento estratégico para restaurantes",
     items: [
       "Estratégias personalizadas para cada restaurante",
@@ -128,7 +121,7 @@ export function ServicesSection() {
                   <div className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/30 h-full flex flex-col">
                     <div className="relative aspect-[16/10] w-full overflow-hidden flex-shrink-0">
                       <img
-                        src={service.image.src}
+                        src={service.image}
                         alt={service.alt}
                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"

@@ -1,5 +1,3 @@
-import logoImg from "@/public/images/logo.png"
-
 export function Footer() {
   return (
     <footer className="border-t border-border/50">
@@ -7,7 +5,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <div className="flex items-center gap-3">
             <img
-              src={logoImg.src}
+              src="/images/logo.png"
               alt="United Food logo"
               width={32}
               height={32}

@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import logoImg from "@/public/images/logo.png"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,7 +11,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-3">
           <img
-            src={logoImg.src}
+            src="/images/logo.png"
             alt="United Food logo"
             width={40}
             height={40}
