@@ -42,30 +42,30 @@ export function HeroSection() {
           </div>
 
           {/* Stats row */}
-          <div className="mt-12 flex flex-wrap items-center gap-8 lg:gap-12">
-            <div>
-              <p className="font-heading text-3xl font-bold text-foreground">
+          <div className="mt-12 flex flex-nowrap items-center justify-center gap-4 sm:gap-8 lg:gap-12">
+            <div className="flex-shrink-0 text-center">
+              <p className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
                 +78
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs text-muted-foreground sm:text-sm">
                 Restaurantes atendidos
               </p>
             </div>
-            <div className="h-10 w-px bg-border" />
-            <div>
-              <p className="font-heading text-3xl font-bold text-foreground">
+            <div className="h-8 flex-shrink-0 w-px bg-border sm:h-10" />
+            <div className="flex-shrink-0 text-center">
+              <p className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
                 +600%
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs text-muted-foreground sm:text-sm">
                 Crescimento de parceiros
               </p>
             </div>
-            <div className="h-10 w-px bg-border" />
-            <div>
-              <p className="font-heading text-3xl font-bold text-primary">
+            <div className="h-8 flex-shrink-0 w-px bg-border sm:h-10" />
+            <div className="flex-shrink-0 text-center">
+              <p className="font-heading text-2xl font-bold text-primary sm:text-3xl">
                 #1
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs text-muted-foreground sm:text-sm">
                 Em resultados reais
               </p>
             </div>
