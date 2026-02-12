@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react"
 
 export function ExclusiveSection() {
   return (
-    <section id="sobre" className="py-20 lg:py-28">
+    <section id="sobre" className="py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-6">
         <div className="relative overflow-hidden rounded-3xl border border-border bg-card">
           {/* Background glow */}
@@ -11,7 +11,7 @@ export function ExclusiveSection() {
             <div className="absolute bottom-0 left-0 h-[300px] w-[300px] rounded-full bg-primary/5 blur-[100px]" />
           </div>
 
-          <div className="relative flex flex-col items-center px-8 py-16 text-center lg:px-16 lg:py-24">
+          <div className="relative flex flex-col items-center px-8 py-12 text-center lg:px-16 lg:py-16">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5">
               <span className="text-xs font-semibold uppercase tracking-wider text-primary">
                 Exclusivo

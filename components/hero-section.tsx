@@ -8,7 +8,7 @@ export function HeroSection() {
         <div className="absolute left-1/2 top-1/4 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-primary/5 blur-[120px]" />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 py-20 lg:py-32">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 py-12 lg:py-20">
         {/* Content centralizado */}
         <div className="flex max-w-2xl flex-1 flex-col items-center text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5">

@@ -3,7 +3,7 @@ import { TrendingUp, Award, Users } from "lucide-react"
 export function SocialProof() {
   return (
     <section className="relative border-y border-border/50">
-      <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
         <div className="text-center">
           <h2 className="font-heading text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
             Resultados falam mais alto que{" "}

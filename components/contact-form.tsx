@@ -29,7 +29,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contato" className="relative py-20 lg:py-28">
+    <section id="contato" className="relative py-12 lg:py-16">
       {/* Fundo sutil */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
 
