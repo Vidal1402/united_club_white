@@ -11,7 +11,7 @@ export function SocialProof() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             Restaurantes que aplicaram nossa metodologia cresceram acima de
-            300%, 400% e até 600% durante a parceria.
+            200% e até 300% durante a parceria.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function SocialProof() {
               Metodologia Validada
             </h3>
             <p className="mt-2 text-muted-foreground leading-relaxed">
-              Processos testados e aprovados em mais de 78 restaurantes de
+              Processos testados e aprovados em mais de 48 estabelecimentos de
               diferentes segmentos e regiões.
             </p>
           </div>
