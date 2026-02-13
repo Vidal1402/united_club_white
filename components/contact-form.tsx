@@ -8,6 +8,8 @@ const inputBase =
   "w-full rounded-xl border-2 border-border bg-background/50 px-4 py-3.5 text-sm text-foreground placeholder-muted-foreground outline-none transition-all focus:border-primary focus:bg-background focus:ring-2 focus:ring-primary/20"
 
 export function ContactForm() {
+  const WHATSAPP_NUMBER = "5521966443119"
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,9 +25,41 @@ export function ContactForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
+  const segmentLabels: Record<string, string> = {
+    hamburgueria: "Hamburgueria",
+    pizzaria: "Pizzaria",
+    "restaurante-a-la-carte": "Restaurante à la carte",
+    lanchonete: "Lanchonete",
+    padaria: "Padaria/Confeitaria",
+    "comida-japonesa": "Comida Japonesa",
+    acaiteria: "Açaiteria/sorveteria",
+    outro: "Outro",
+  }
+
+  const revenueLabels: Record<string, string> = {
+    "ate-30k": "Até R$30.000",
+    "30k-60k": "R$30.000 - R$60.000",
+    "60k-100k": "R$60.000 - R$100.000",
+    "100k-200k": "R$100.000 - R$200.000",
+    "acima-200k": "Acima de R$200.000",
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+    const segmentText = segmentLabels[formData.segment] || formData.segment
+    const revenueText = revenueLabels[formData.revenue] || formData.revenue
+    const message = [
+      "*Novo contato - United Food*",
+      "",
+      `*Nome:* ${formData.name}`,
+      `*E-mail:* ${formData.email}`,
+      `*Telefone:* ${formData.phone}`,
+      `*Estabelecimento:* ${formData.company}`,
+      `*Segmento:* ${segmentText}`,
+      `*Faturamento mensal:* ${revenueText}`,
+    ].join("\n")
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+    window.open(url, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -195,6 +229,7 @@ export function ContactForm() {
                       <option value="lanchonete">Lanchonete</option>
                       <option value="padaria">Padaria/Confeitaria</option>
                       <option value="comida-japonesa">Comida Japonesa</option>
+                      <option value="acaiteria">Açaiteria/sorveteria</option>
                       <option value="outro">Outro</option>
                     </select>
                   </div>

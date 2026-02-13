@@ -20,8 +20,8 @@ export function HeroSection() {
 
           <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
             <span className="text-balance">
-              A maior assessoria de crescimento para restaurantes que querem{" "}
-              <span className="text-primary">vender todos os dias</span>
+              A maior assessoria de crescimento para o setor de Food Service que quer{" "}
+              <span className="text-primary">vender todos os dias</span>.
             </span>
           </h1>
 
@@ -41,31 +41,31 @@ export function HeroSection() {
             </a>
           </div>
 
-          {/* Stats row */}
-          <div className="mt-12 flex flex-nowrap items-center justify-center gap-4 sm:gap-8 lg:gap-12">
-            <div className="flex-shrink-0 text-center">
+          {/* Stats - coluna no celular para não cortar texto; linha no desktop */}
+          <div className="mt-12 flex w-full max-w-md flex-col items-center gap-6 sm:max-w-none sm:flex-row sm:flex-nowrap sm:gap-8 lg:gap-12">
+            <div className="flex min-w-0 flex-1 basis-0 flex-col items-center text-center sm:flex-shrink-0 sm:basis-auto">
               <p className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-                +78
+                +48
               </p>
-              <p className="text-xs text-muted-foreground sm:text-sm">
-                Restaurantes atendidos
+              <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
+                Estabelecimentos atendidos
               </p>
             </div>
-            <div className="h-8 flex-shrink-0 w-px bg-border sm:h-10" />
-            <div className="flex-shrink-0 text-center">
+            <div className="hidden h-10 w-px flex-shrink-0 bg-border sm:block" />
+            <div className="flex min-w-0 flex-1 basis-0 flex-col items-center text-center sm:flex-shrink-0 sm:basis-auto">
               <p className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-                +600%
+                +300%
               </p>
-              <p className="text-xs text-muted-foreground sm:text-sm">
+              <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
                 Crescimento de parceiros
               </p>
             </div>
-            <div className="h-8 flex-shrink-0 w-px bg-border sm:h-10" />
-            <div className="flex-shrink-0 text-center">
+            <div className="hidden h-10 w-px flex-shrink-0 bg-border sm:block" />
+            <div className="flex min-w-0 flex-1 basis-0 flex-col items-center text-center sm:flex-shrink-0 sm:basis-auto">
               <p className="font-heading text-2xl font-bold text-primary sm:text-3xl">
                 #1
               </p>
-              <p className="text-xs text-muted-foreground sm:text-sm">
+              <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
                 Em resultados reais
               </p>
             </div>
