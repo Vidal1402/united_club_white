@@ -1,8 +1,11 @@
 "use client"
 
-import { ArrowRight } from "lucide-react"
+import { useState } from "react"
+import { ArrowRight, Video } from "lucide-react"
 
 export function HeroSection() {
+  const [videoError, setVideoError] = useState(false)
+
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden pt-20">
       {/* Subtle background glow */}
@@ -81,19 +84,31 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Coluna direita - vídeo com cantos arredondados (estilo referência) */}
+        {/* Coluna direita - vídeo vertical com cantos arredondados */}
         <div className="relative flex items-center justify-center lg:justify-end">
-          <div className="w-full overflow-hidden rounded-2xl border border-border bg-card shadow-2xl lg:rounded-l-none lg:rounded-r-3xl">
-            <video
-              src="/videos/img-5635_XKiZXKYb.mp4"
-              className="aspect-video w-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              Seu navegador não suporta vídeos.
-            </video>
+          <div className="w-full max-w-[280px] overflow-hidden rounded-2xl border border-border bg-muted/50 shadow-2xl lg:max-w-[320px] lg:rounded-l-none lg:rounded-r-3xl">
+            {videoError ? (
+              <div className="flex aspect-[9/16] w-full flex-col items-center justify-center gap-3 rounded-2xl bg-muted p-6 text-center lg:rounded-l-none lg:rounded-r-3xl">
+                <Video className="h-12 w-12 text-muted-foreground" />
+                <p className="text-sm text-muted-foreground">
+                  Coloque o arquivo <code className="rounded bg-border px-1 py-0.5 text-xs">img-5635_XKiZXKYb.mp4</code> em <code className="rounded bg-border px-1 py-0.5 text-xs">public/videos/</code>
+                </p>
+              </div>
+            ) : (
+              <video
+                src="/videos/img-5635_XKiZXKYb.mp4"
+                className="aspect-[9/16] w-full object-contain"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                onError={() => setVideoError(true)}
+              >
+                <source src="/videos/img-5635_XKiZXKYb.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            )}
           </div>
         </div>
       </div>
