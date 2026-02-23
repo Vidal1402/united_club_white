@@ -85,7 +85,7 @@ export function HeroSection() {
         <div className="relative flex items-center justify-center lg:justify-end">
           <div className="w-full overflow-hidden rounded-2xl border border-border bg-card shadow-2xl lg:rounded-l-none lg:rounded-r-3xl">
             <video
-              src="/videos/IMG_5635.MOV"
+              src="/videos/img-5635_XKiZXKYb.mp4"
               className="aspect-video w-full object-cover"
               autoPlay
               muted
