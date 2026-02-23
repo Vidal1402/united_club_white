@@ -84,11 +84,11 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Coluna direita - vídeo vertical com cantos arredondados */}
+        {/* Coluna direita - vídeo vertical, cantos uniformemente arredondados */}
         <div className="relative flex items-center justify-center lg:justify-end">
-          <div className="w-full max-w-[280px] overflow-hidden rounded-2xl border border-border bg-muted/50 shadow-2xl lg:max-w-[320px] lg:rounded-l-none lg:rounded-r-3xl">
+          <div className="w-full max-w-[340px] overflow-hidden rounded-2xl border border-border bg-muted/50 shadow-2xl lg:max-w-[420px]">
             {videoError ? (
-              <div className="flex aspect-[9/16] w-full flex-col items-center justify-center gap-3 rounded-2xl bg-muted p-6 text-center lg:rounded-l-none lg:rounded-r-3xl">
+              <div className="flex aspect-[9/16] w-full flex-col items-center justify-center gap-3 rounded-2xl bg-muted p-6 text-center">
                 <Video className="h-12 w-12 text-muted-foreground" />
                 <p className="text-sm text-muted-foreground">
                   Coloque o arquivo <code className="rounded bg-border px-1 py-0.5 text-xs">img-5635_XKiZXKYb.mp4</code> em <code className="rounded bg-border px-1 py-0.5 text-xs">public/videos/</code>
@@ -97,7 +97,7 @@ export function HeroSection() {
             ) : (
               <video
                 src="/videos/img-5635_XKiZXKYb.mp4"
-                className="aspect-[9/16] w-full object-contain"
+                className="aspect-[9/16] w-full rounded-2xl object-contain"
                 autoPlay
                 muted
                 loop
