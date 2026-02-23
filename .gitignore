@@ -10,3 +10,6 @@ node_modules/
 .next/
 .env*.local
 .DS_Store
+
+# Vídeos (muito grandes para o GitHub; coloque em public/videos/ localmente ou use URL externa)
+public/videos/
