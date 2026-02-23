@@ -60,8 +60,8 @@ export function HeroSection() {
 
           <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
             <span className="text-balance">
-              A maior assessoria de crescimento para o setor de Food Service que quer{" "}
-              <span className="text-primary">vender todos os dias</span>.
+              Aumente as vendas do seu restaurante e delivery{" "}
+              <span className="text-primary">sem depender só de apps</span>.
             </span>
           </h1>
 
