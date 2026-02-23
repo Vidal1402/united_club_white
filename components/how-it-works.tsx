@@ -54,14 +54,14 @@ export function HowItWorks() {
                 >
                   {/* Content side */}
                   <div
-                    className={`flex-1 ${
+                    className={`flex-1 text-center ${
                       index % 2 === 0
                         ? "lg:pr-16 lg:text-right"
                         : "lg:pl-16 lg:text-left"
                     }`}
                   >
                     <div
-                      className={`rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/30 ${
+                      className={`mx-auto rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/30 ${
                         index % 2 === 0 ? "lg:ml-auto" : "lg:mr-auto"
                       } max-w-md`}
                     >

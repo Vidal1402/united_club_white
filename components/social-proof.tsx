@@ -15,9 +15,9 @@ export function SocialProof() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mt-16 grid gap-6 text-center md:grid-cols-3 md:text-left">
           <div className="group rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/30">
-            <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3">
+            <div className="mx-auto mb-4 inline-flex rounded-xl bg-primary/10 p-3 md:mx-0">
               <TrendingUp className="h-6 w-6 text-primary" />
             </div>
             <h3 className="font-heading text-xl font-bold text-foreground">
@@ -30,7 +30,7 @@ export function SocialProof() {
           </div>
 
           <div className="group rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/30">
-            <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3">
+            <div className="mx-auto mb-4 inline-flex rounded-xl bg-primary/10 p-3 md:mx-0">
               <Award className="h-6 w-6 text-primary" />
             </div>
             <h3 className="font-heading text-xl font-bold text-foreground">
@@ -43,7 +43,7 @@ export function SocialProof() {
           </div>
 
           <div className="group rounded-2xl border border-border bg-card p-8 transition-all hover:border-primary/30">
-            <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3">
+            <div className="mx-auto mb-4 inline-flex rounded-xl bg-primary/10 p-3 md:mx-0">
               <Users className="h-6 w-6 text-primary" />
             </div>
             <h3 className="font-heading text-xl font-bold text-foreground">

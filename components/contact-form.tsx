@@ -72,15 +72,15 @@ export function ContactForm() {
           <div className="overflow-hidden rounded-3xl border border-border bg-card/80 shadow-2xl shadow-black/20 backdrop-blur-sm">
             <div className="grid gap-0 lg:grid-cols-[1fr,1.1fr]">
               {/* Coluna esquerda - texto */}
-              <div className="border-border bg-muted/30 p-8 lg:border-r lg:p-12">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15">
+              <div className="border-border bg-muted/30 p-8 text-center lg:border-r lg:p-12 lg:text-left">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 lg:mx-0">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <h2 className="mt-6 font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
                   Agende sua{" "}
                   <span className="text-primary">reunião estratégica</span>
                 </h2>
-                <p className="mt-4 max-w-sm text-base leading-relaxed text-muted-foreground">
+                <p className="mx-auto mt-4 max-w-sm text-base leading-relaxed text-muted-foreground lg:mx-0">
                   Preencha o formulário e um especialista entrará em contato em
                   até 8 horas para agendar sua reunião personalizada.
                 </p>
@@ -103,7 +103,7 @@ export function ContactForm() {
                       desc: "Aplicamos as estratégias e escalamos seus resultados.",
                     },
                   ].map((item) => (
-                    <div key={item.step} className="flex gap-4">
+                    <div key={item.step} className="flex flex-col items-center gap-2 text-center sm:flex-row sm:gap-4 sm:text-left">
                       <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-primary/15 font-heading text-sm font-bold text-primary">
                         {item.step}
                       </div>

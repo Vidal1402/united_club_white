@@ -8,7 +8,7 @@ export function PlansSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 lg:items-center">
           {/* Coluna esquerda - texto */}
-          <div>
+          <div className="text-center lg:text-left">
             <span className="inline-block rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
               Planos personalizados
             </span>
@@ -16,19 +16,19 @@ export function PlansSection() {
               Ajuste a estratégia ao{" "}
               <span className="text-primary">momento do seu negócio</span>
             </h2>
-            <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground lg:text-lg">
+            <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-muted-foreground lg:mx-0 lg:text-lg">
               Trabalhamos com pacotes adaptáveis. Você contrata de acordo com o
               estágio em que está hoje. O essencial é não parar de investir em
               ações que geram retorno real.
             </p>
-            <ul className="mt-8 flex flex-col gap-4">
+            <ul className="mx-auto mt-8 flex max-w-md flex-col gap-4 lg:mx-0">
               {[
                 { icon: Target, text: "Planos que se encaixam no seu faturamento atual" },
                 { icon: Zap, text: "Comece com o que faz sentido e escale depois" },
                 { icon: TrendingUp, text: "Foco em táticas que já provaram resultado" },
               ].map(({ icon: Icon, text }) => (
-                <li key={text} className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 text-primary">
+                <li key={text} className="flex items-center gap-3 lg:flex-row">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
                     <Icon className="h-5 w-5" />
                   </span>
                   <span className="text-muted-foreground">{text}</span>
@@ -38,7 +38,7 @@ export function PlansSection() {
           </div>
 
           {/* Coluna direita - gráfico fictício de destaque */}
-          <div className="relative">
+          <div className="relative mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none">
             <div className="overflow-hidden rounded-2xl border border-border bg-muted/30 p-6 shadow-xl ring-1 ring-black/5 lg:p-8">
               <div className="mb-4 flex items-center justify-between">
                 <span className="text-sm font-medium text-muted-foreground">

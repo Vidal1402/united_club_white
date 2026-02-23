@@ -8,7 +8,7 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="relative mx-auto flex max-w-7xl items-center justify-center px-6 py-4 md:justify-between">
         <a href="#" className="flex items-center gap-3">
           <img
             src="/images/logo.png"
@@ -51,7 +51,7 @@ export function Navbar() {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-foreground md:hidden"
+          className="absolute right-6 top-1/2 -translate-y-1/2 text-foreground md:relative md:right-0 md:top-0 md:translate-y-0 md:hidden"
           aria-label="Toggle menu"
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -60,7 +60,7 @@ export function Navbar() {
 
       {isOpen && (
         <div className="border-t border-border/50 bg-background/95 backdrop-blur-lg md:hidden">
-          <div className="flex flex-col gap-4 px-6 py-6">
+          <div className="flex flex-col items-center gap-4 px-6 py-6 text-center">
             <a
               href="#servicos"
               onClick={() => setIsOpen(false)}
