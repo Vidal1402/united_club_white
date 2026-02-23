@@ -13,7 +13,7 @@ export function HeroSection() {
         <div className="absolute left-1/2 top-1/4 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-primary/5 blur-[120px]" />
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-8 px-6 py-12 lg:min-h-[calc(100vh-5rem)] lg:grid-cols-[1fr,1.1fr] lg:gap-12 lg:py-16">
+      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-6 px-6 py-12 lg:min-h-[calc(100vh-5rem)] lg:grid-cols-[1fr,1.1fr] lg:gap-8 lg:py-16">
         {/* Coluna esquerda - texto */}
         <div className="flex flex-col items-start text-left">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5">
